@@ -23,9 +23,4 @@ function contarValoresInteiros(dataset, N) {
     return count;
 }
 
-const dados = [2, 3.5, 4, 5, 6, "texto", 7, 8.2, 9, 10, 20, 30, "text", "ola", 33.3, 100,22,55,66,77,88];
-
-console.log(contarValoresInteiros(dados, 20));
-console.log(contarValoresInteiros(dados, 6));  
-console.log(contarValoresInteiros(dados, 10));  
-console.log(contarValoresInteiros(dados, 0));  
+module.exports = contarValoresInteiros;

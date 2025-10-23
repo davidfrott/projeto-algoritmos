@@ -9,5 +9,4 @@ function mdc(a, b) {
   return Math.abs(a); // valor absoluto, caso seja negativo
 }
 
-const a = 56, b = 98;
-console.log(`MDC de ${a} e ${b} é:`, mdc(a, b));
+module.exports = mdc;

@@ -20,5 +20,4 @@ function quickSort(arr) {
     return [...quickSort(left), pivot, ...quickSort(right)];
   }
 
-  const arr = [10, 5, 3, 8, 2, 9];
-  console.log("Array ordenado:", quickSort(arr));
+module.exports = quickSort;

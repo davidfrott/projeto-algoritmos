@@ -8,5 +8,4 @@ function fibonacci(n) {
     return seq;
 }
 
-console.log("\n3. Fibonacci:");
-console.log("Os 10 primeiros termos de Fibonacci:", fibonacci(10));
+module.exports = fibonacci;

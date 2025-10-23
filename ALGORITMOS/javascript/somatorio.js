@@ -9,4 +9,4 @@ function somatorio(numeros) {
     return soma;
 }
 
-console.log(somatorio(numeros));
+module.exports = somatorio;
