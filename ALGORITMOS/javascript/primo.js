@@ -21,3 +21,7 @@ function primo(numeros) {
 }
 
 module.exports = primo;
+
+let numerosParaTestar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 17];
+console.log( "Array original:", numerosParaTestar );
+console.log( "Números primos encontrados:", primo(numerosParaTestar) );

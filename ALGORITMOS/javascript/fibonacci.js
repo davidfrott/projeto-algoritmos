@@ -9,3 +9,5 @@ function fibonacci(n) {
 }
 
 module.exports = fibonacci;
+
+console.log( "Sequência de Fibonacci com 7 termos:", fibonacci(7) );

@@ -10,3 +10,5 @@ function mdc(a, b) {
 }
 
 module.exports = mdc;
+
+console.log( "MDC de 48 e 18 é:", mdc(48, 18) );

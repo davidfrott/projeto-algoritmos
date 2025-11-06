@@ -2,20 +2,18 @@
 //Dado um conjunto de dados, retorne os valores inteiros entre o primeiro elemento, e o valor N.
 
 function contarValoresInteiros(dataset, N) {
-    let limite;
-    if (N > dataset.length) {
-        limite = dataset.length;
-    } else if (N < 1) {
-        return 0;
-    } else {
-        limite = N;
+    // A única validação que parece fazer sentido é se N for inválido
+    if (N === undefined || N === null) { 
+        return 0; 
     }
-    
+
     const inicio = dataset[0];
     let count = 0;
+
     for (let i = 0; i < dataset.length; i++) {
         const valor = dataset[i];
-        if (Number.isInteger(valor) && valor >= inicio && valor <= limite) {
+
+        if (Number.isInteger(valor) && valor >= inicio && valor <= N) {
             count++;
         }
     }
@@ -24,3 +22,10 @@ function contarValoresInteiros(dataset, N) {
 }
 
 module.exports = contarValoresInteiros;
+
+let meusDados = [10, 11, 13, 19, 20, 21, 8, 9.5];
+let N = 20;
+
+console.log( "Dataset:", meusDados );
+console.log( "Valor N (limite):", N );
+console.log( "Contagem de inteiros:", contarValoresInteiros(meusDados, N) );

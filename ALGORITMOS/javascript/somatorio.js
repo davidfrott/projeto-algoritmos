@@ -10,3 +10,6 @@ function somatorio(numeros) {
 }
 
 module.exports = somatorio;
+
+let meusNumeros = [10, 20, 30, 40, 50];
+console.log( "Resultado do somatório:", somatorio(meusNumeros) );

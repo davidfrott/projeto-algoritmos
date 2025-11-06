@@ -21,3 +21,7 @@ function quickSort(arr) {
   }
 
 module.exports = quickSort;
+
+let arrayDesordenado = [5, 3, 8, 1, 9, 4, 2, 7, 6];
+console.log( "Array desordenado:", arrayDesordenado );
+console.log( "Array ordenado:", quickSort(arrayDesordenado) );
